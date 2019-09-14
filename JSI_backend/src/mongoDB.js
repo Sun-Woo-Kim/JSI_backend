@@ -1,6 +1,10 @@
 const config = require("dotenv").config();
 let mongoose = require("mongoose");
 
+// Node의 native Promise 사용
+mongoose.Promise = global.Promise;
+
+// Connect to MongoDB
 exports.connect = function() {
   mongoose
     .connect(process.env.DB_URI, {
