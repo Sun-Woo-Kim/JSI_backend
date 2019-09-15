@@ -1,8 +1,6 @@
-//import { Router } from "express";
-//const router = Router();
+import { Router } from "express";
+const router = Router();
 
-const express = require("express");
-const router = express.Router();
 import {
   findAll,
   findOneByTodoid,
